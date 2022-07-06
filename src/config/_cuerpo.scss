@@ -1,0 +1,31 @@
+
+#bienvenida{
+    padding-top: 40%;
+    padding-left: 18%;
+    display: grid;
+    grid-template-areas: "img img"
+                        "texto texto"
+                        "boton boton"; 
+    width: 85%;
+
+
+figcaption {
+    grid-area: img;
+    img{
+    margin-left: 29%;
+    width: 40%;
+    }
+}
+#texto{
+    grid-area: texto;
+    text-align: center;
+}
+#botones{
+    grid-area: boton;
+    width: 90%;
+    padding-left: 6%;
+    display: flex;
+justify-content: space-around;
+}
+
+}

@@ -1,0 +1,98 @@
+@mixin margin ($left, $right, $top, $bottom){
+    margin-left: $left;
+    margin-right: $right;
+    margin-top: $top;
+    margin-bottom: $bottom ;
+}
+
+
+*{
+   
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: rgb(252, 127, 137);
+    margin: 0px;
+    padding: 0px;
+    a{
+        color: $mydark;
+    }
+}
+
+#encabezado{
+   z-index: 9999;
+    position: fixed;
+    padding-right: 200rem;
+    background-color: $myBgColorLight2;
+
+    i{
+        padding: 0rem 1rem 0rem 1rem;
+    }
+    
+
+    /*.navbar-toggler-icon{
+        background-color: $mysecundary;
+    }*/
+}
+
+aside{
+    float: left;
+    position: fixed;
+    z-index: 10;
+    padding-top: 150px;
+    padding-bottom: 380rem;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #fbc1c1;
+}
+
+main{
+    padding-left: 5rem;
+    padding-right: 2rem;
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+    i{
+        padding: 1rem;
+    }
+
+    .listCards{
+        margin: 4rem;
+    }
+
+}
+
+
+.contactos{
+
+    .Info{
+        @include margin (35%, 35%, 0%, 0%);
+        padding-top: 10rem;
+        justify-content: center;
+        border-radius: 10%;
+
+        i{
+            font-size: 15px;
+            padding: 1rem;  
+        }
+
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: $myBgColorLight2;
+        } 
+
+        ul{
+            @include setFlex(column, center); 
+            align-items: flex-start;
+        }
+
+        p{
+            text-align: center;
+        }
+    }
+}
