@@ -15,7 +15,7 @@ fetch(pUrl)
         boton.setAttribute("class" ,"btn btn-primary verModal");
         boton.setAttribute("data-bs-target", "#Modal");
         boton.setAttribute("data-bs-toggle", "modal");
-        boton.innerHTML = "M&aacute;s Información";
+        boton.innerHTML = "More Info";
 
 
         //funcion onlick
@@ -27,7 +27,6 @@ fetch(pUrl)
             "<tr> <td> Flour </th> <th>"+ element.Flour + "</td>  </tr>" +
             "<tr> <td> Vanilla extract </th> <th>"+ element.Vanillaextract + "</td>  </tr>" +
             "<tr> <td> Salt </th> <th>"+ element.Salt;
-
 
             document.querySelector(".tableMenu tbody").innerHTML = fila;
         }
